@@ -1,0 +1,25 @@
+{
+  "name": "illustration-converter",
+  "version": "1.0.0",
+  "description": "A website that converts photos to illustrations based on user-provided templates",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "mkdir -p public/outputs public/css public/js || echo 'Outputs directories created'",
+    "vercel-build": "mkdir -p public/outputs public/css public/js || true"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "jimp": "^0.22.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+} 
